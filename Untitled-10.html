@@ -1,0 +1,40 @@
+
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<script type="text/javascript">
+"use strict";
+    let xhr = new XMLHttpRequest();
+
+    function askServer() {
+  // Получаем введенные в форму числа
+  var login = document.getElementById("login").value;
+  var password = document.getElementById("password").value;
+
+  // Структурируем строку запроса
+  var dataToSend = "?login=" + login + "&password=" + password;
+    
+    xhr.open("GET", "WebCalculator.php" + dataToSend, true);
+    req.onreadystatechange = handleServerResponse;
+  req.send();
+
+  document.getElementById("result").innerHTML = "Запрос отправлен на сервер.";
+}
+</script>
+</head>
+<body>
+    <form action="service.jsp" method="get">
+<div>
+   <p>
+      Login:<input name="login" type="text"><br />
+     Password:<input name="password" type="text">
+   </p>
+      <button onclick="askServer()">Отправить</button>
+   </p>
+</div>
+   <p id="result"></p>
+</form>
+       
+</body>
+</html>
