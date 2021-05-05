@@ -1,1 +1,34 @@
 
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<script type="text/javascript">
+"use strict";
+    let xhr = new XMLHttpRequest();
+
+// 2. Настраиваем его: GET-запрос по URL /article/.../load
+xhr.open('GET', '/article/xmlhttprequest/example/load');
+
+// 3. Отсылаем запрос
+xhr.send();
+
+
+</script>
+</head>
+<body>
+    <form action="service.jsp" method="get" onsubmit="AJAXSubmit(this); return false;">
+        <fieldset>
+          <p>
+            Login: <input type="text" input name="login" /><br />
+          Password: <input type="text" input name="password" />
+          </p>
+          <p>
+            <input type="submit" value="Submit" />
+          </p>
+        </fieldset>
+      </form>
+      
+      
+      </body>
+      </html>
