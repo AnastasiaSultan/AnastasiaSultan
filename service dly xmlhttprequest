@@ -1,0 +1,15 @@
+<%
+    String correctPassword = "1234";
+    String password = request.getParameter("password");
+    String login = request.getParameter("login");
+    String message = "";
+
+    if (password.equals(correctPassword)) {
+       message = "{result:\"success\"}";
+    } else {
+        message = "{result:\"error\"}";
+    }
+  
+
+%>
+<%=message%>
