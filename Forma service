@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Login page</title>
+</head>
+<body>
+<%
+    String correctPassword = "1234";
+    String password = request.getParameter("password");
+    String login = request.getParameter("login");
+    String message = "";
+
+    if (password.equals(correctPassword)) {
+        message = "Welcome, " + login + "! Your password = " + password;
+    } else {
+        message = "Access denied.";
+    }
+
+%>
+<div><%=message%>
+</div>
+</body>
+</html>
