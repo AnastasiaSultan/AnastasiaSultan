@@ -4,17 +4,20 @@ public class StringTest {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-String a = "1 2 3 4 5 6 7 8 9";
-StringBuilder result = new StringBuilder();
-for (int index=0; index < a.length(); index++) {
-		 result.append(a.charAt(index)).append(" ");
+                StringBuilder result = new StringBuilder();
+		StringBuilder sb = new StringBuilder();
+		result.append(" ");
+		for (int index=1; index < 10; index++) {
+				 sb.append(index).append(result);
+			
+				 result.append(" ");
+			}
+			
+			System.err.println("Result=" + sb);
+			}
+		}
 	
-		
-	}
-	
-	System.err.println("Result:" + result.toString());
-	}
-}
+
 	
 
 
