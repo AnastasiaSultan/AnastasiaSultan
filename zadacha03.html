@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Игра</title>
+    <style>
+      .game-container {
+        display: none;
+      }
+      .result-container {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="settings-container">
+      <label for="numbers" class="label">Укажите количество знаков в числе</label>
+      <input type="text" id="numbers" />
+      <label for="del" class=".label">Укажите делитель</label>
+      <input type="text" id="del" />
+      <button id="start">Start</button>
+    </div>
+    <div class="game-container">
+      <p>Время: <span id="time">0</span></p>
+      <p>Верные ответы: <span id="goodAnswer">0</span></p>
+      <p>Неверные ответы: <span id="errorAnswer">0</span></p>
+      <label for="answer">Введите ответ результата деления</label>
+      <p><span id="number"></span>/<span id="delitel"></span></p>
+      <p>Если число дробное, округлите до ближайшего большего целого числа!</p>
+      <input type="text" id="answer" />
+      <button id="setAnswer">Продолжить</button>
+      <button id="stop">Стоп</button>
+    </div>
+    <div class="result-container">
+      <h2>Результат игры:</h2>
+      <p>Ваши очки: <span id="points"></span></p>
+      <button id="tryAgain">Еще раз</button>
+    </div>
+    <script>
+      const btn = document.querySelector("#start").addEventListener("click", (e) => {
+        e.preventDefault();
+        const number = document.querySelector("#numbers");
+        const del = document.querySelector("#del");
+        if (number.value !== "" && !isNaN(parseInt(number.value)) && parseInt(number.value) > 0 && parseInt(del.value) > 0 && !isNaN(parseInt(del.value)) && del.value !== "") {
+          document.querySelector(".settings-container").style.display = "none";
+          document.querySelector(".game-container").style.display = "block";
+          startGame(number.value, del.value);
+          number.value = "";
+          del.value = "";
+        }
+      });
+
+      const startGame = (count, del) => {
+        let timer = 0;
+        let good = 0;
+        let error = 0;
+        let intervalId;
+
+        intervalId = setInterval(() => {
+          timer++;
+          document.querySelector("#time").textContent = timer;
+        }, 1000);
+
+        let number = getNumber(count);
+        document.querySelector("#number").textContent = number;
+        document.querySelector("#delitel").textContent = del;
+
+        document.querySelector("#setAnswer").addEventListener("click", (e) => {
+          e.preventDefault();
+          const value = parseInt(document.querySelector("#answer").value);
+          const numbers = parseInt(document.querySelector("#number").textContent);
+          if (value === Math.ceil(parseInt(numbers) / del)) {
+            good++;
+          } else {
+            error++;
+          }
+          document.querySelector("#goodAnswer").textContent = good;
+          document.querySelector("#errorAnswer").textContent = error;
+
+          number = getNumber(count);
+          document.querySelector("#number").textContent = number;
+          document.querySelector("#answer").value = "";
+        });
+
+        document.querySelector("#stop").addEventListener("click", (e) => {
+          e.preventDefault();
+          document.querySelector(".game-container").style.display = "none";
+          document.querySelector(".result-container").style.display = "block";
+          clearInterval(intervalId);
+          document.querySelector("#points").textContent = good === 0 ? 0 : Math.ceil((1000 * good) / timer);
+        });
+
+        document.querySelector("#tryAgain").addEventListener("click", (e) => {
+          e.preventDefault();
+          document.querySelector(".result-container").style.display = "none";
+          document.querySelector(".settings-container").style.display = "block";
+          error = 0;
+          good = 0;
+          timer = 0;
+          clearInterval(intervalId);
+        });
+      };
+
+      const getNumber = (count) => {
+        let result = "";
+        for (let i = 0; i < count; i++) {
+          const number = Math.ceil(Math.random() * 9);
+          result += number;
+        }
+
+        return parseInt(result);
+      };
+    </script>
+  </body>
+</html>
