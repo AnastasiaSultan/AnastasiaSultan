@@ -1,0 +1,534 @@
+.Fon{
+    position: absolute; 
+    width: 1440px; height: 900px;
+    z-index: 1;
+    left: 0%;
+    right: 0%;
+    bottom: 0%;
+}
+
+.VerxPolosa{
+    position: absolute; 
+    top: 0px; z-index: 2;
+    width: 1440px; height: 72px; 
+    left: 0%;
+    right: 0%;
+    bottom: 92%;
+}
+
+.Logotip{
+    position: absolute;
+    top: 0px; z-index: 3;
+    width: 160px; height: 72px; margin-left: 148px;
+    left: 0%;
+    right: 0%;
+    bottom: 92%;
+    
+}
+
+.Vsplyvaychee{
+    height: 80px;
+    width: 328px; z-index: 5;
+    left: 975px;
+    top: 10px;
+    border-radius: 4px;
+    background: #F5F7F9;
+    box-shadow: 4px 4px 8px 0px #0000004D;
+    position: absolute;
+    bottom: 0%;
+    
+}
+.Vokne1{
+    height: 20px;
+   width: 214px;z-index: 5;
+    left: 72px;
+    top: 0px;
+    border-radius: nullpx;
+    color: #4A4A4A;
+    position: absolute;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+}
+.Vokne2{
+    height: 40px;
+   width: 40px; z-index: 5;
+   left: 16px;
+   top: 18px;
+   border-radius: 0px;
+   position: absolute;
+   bottom: 30%;
+
+}
+.Vokne3{
+    height: 30px;
+   width: 214px;z-index: 5;
+    left: 72px;
+    top: 30px;
+    border-radius: nullpx;
+    color: #4A4A4A;
+    position: absolute;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    
+}
+.Vokne03{
+    height: 30px;
+   width: 214px;z-index: 5;
+    left: 72px;
+    top: 45px;
+    border-radius: nullpx;
+    color: #4A4A4A;
+    position: absolute;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    
+}
+.Vokne4{
+    height: 24px;
+   width: 24px; z-index: 5;
+   left: 296px;
+   top: 8px;
+   border-radius: 0px;
+   position: absolute;
+   bottom: 60%;
+
+}
+.Red{
+    position: absolute; 
+    top: 72px; z-index: 4;
+    width: 1440px; height: 56px;
+    left: 0%;
+    right: 0%;
+    bottom: 85.78%;
+}
+
+.RedWords{
+        position: absolute;
+        height: 22px;  top: 79px; left: 148px; z-index: 5;
+        
+       font-family: 'Open Sans', sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 19px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFFFFF;
+
+         } 
+
+
+
+.RedWords2 {
+    position: absolute;
+        height: 22px;  top: 65px; left: 309px; z-index: 5;
+
+        font-family: 'Open Sans', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 19px;
+        display: flex;
+        align-items: center;
+        text-transform: uppercase;
+        
+        mix-blend-mode: normal;
+        opacity: 0.8;
+        color: #FFFFFF;
+}    
+.RedWords02{
+    position: absolute;
+    height: 22px;  top: 85px; left: 309px; z-index: 5;
+
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+
+    mix-blend-mode: normal;
+    opacity: 0.8; 
+}
+.RedWords3{
+    position: absolute;
+        height: 22px;  top: 79px; left: 521px; z-index: 5;
+
+        font-family: 'Open Sans', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 19px;
+        display: flex;
+        align-items: center;
+        text-transform: uppercase;
+
+        color: #FFFFFF;
+
+        mix-blend-mode: normal;
+        opacity: 0.8; 
+        }     
+        
+
+        .RedWords4{
+            position: absolute;
+        height: 22px;  top: 79px; left: 634px; z-index: 5;
+
+        font-family: 'Open Sans', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 19px;
+        display: flex;
+        align-items: center;
+        text-transform: uppercase;
+
+        color: #FFFFFF;
+
+        mix-blend-mode: normal;
+        opacity: 0.8; 
+        }
+        
+        .RedWords5{
+            position: absolute;
+            height: 22px;  top: 79px; left: 740px; z-index: 5;
+    
+            font-family: 'Open Sans', sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 19px;
+            display: flex;
+            align-items: center;
+            text-transform: uppercase;
+            
+            mix-blend-mode: normal;
+            opacity: 0.8;
+            color: #FFFFFF;   
+        }
+        .SredniyBlok{
+            height: 232px;
+            width: 1440px; 
+            left: 0px;
+             top: 128px; z-index: 3;
+            border-radius: 0px;
+            background: rgba(0, 0, 0, 0.3);
+            position: absolute;
+            bottom: 60%;
+        }
+        .CardCopy{
+            position: absolute; z-index: 5;
+        
+
+        width: 296px; height: 184px; top: 34px; left: 296px;
+
+        background: #B52C2C, #690000;
+        
+        right: -100%;
+
+        bottom: -100%;
+        border-radius: 8px;
+        }
+
+        .KrasnyiBlok{
+            position: absolute; z-index: 5;
+            width: 136px; height: 40px; top: 20px; left: 820px;
+            background: #BA1419;
+            bottom: 78.67%;
+            border-radius: 4px;
+        }
+        .KrasnyiBlok1{
+            position: absolute; z-index: 5;
+            width: 88px; height: 40px; top: 28px; left: 847px;
+            color: #FFFFFF;
+            font-family: 'Open Sans', sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 22px;
+        }
+        .BelyiBlok{
+            position: absolute; z-index: 5;
+            width: 136px; height: 40px; top: 20px; left: 972px;
+            border: 1px solid #FFFFFF;
+            bottom: 78.67%;
+            box-sizing: border-box;
+            border-radius: 4px;
+        }
+        .BelyiBlok1{
+            position: absolute; z-index: 5;
+            width: 33px; height: 22px; top: 28px; left: 1012px;
+            color: #FFFFFF;
+            font-family: 'Open Sans', sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 22px;
+        }
+        .BelyiBlok01{
+            height: 19px; z-index: 5;
+            width: 19px;
+            left: 1055px;
+            top: 42px;
+            border-radius: 0px;
+            position: absolute;
+            bottom: 76.89%;
+            transform: rotate(-1deg);
+           
+
+        }
+        .BelyiBlok2{
+            position: absolute; z-index: 5;
+            width: 49px; height: 22px; top: 20px; left: 188px;
+            color: #FFFFFF;
+            font-family: 'Open Sans', sans-serif;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 22px;
+        }
+        .BelyiBlok3{
+            position: absolute; z-index: 5;
+            width: 32px; height: 32px; top: 30px; left: 148px;
+            bottom: 79.56%;
+        }
+        .OknoB{
+            position: absolute; z-index: 5;
+        
+
+        width: 200px; height: 120px; top: 85px; left: 972px;
+
+        background: #FFFFFF;
+        box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+        border-radius: 4px;
+        bottom: 64.44%;
+        }
+
+        .OknoWords{
+            position: absolute; z-index: 5;
+            width: 75px; height: 22px; top: 80px; left: 1020px;
+            color: #4A4A4A;
+            font-family: 'Open Sans', sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 22px;
+        }
+        .OknoWords2{
+            position: absolute; z-index: 5;
+            width: 83px; height: 22px; top: 115px; left: 1020px;
+            color: #4A4A4A;
+            font-family: 'Open Sans', sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 22px;
+        }
+        .OknoWords3{
+            position: absolute; z-index: 5;
+            width: 124px; height: 22px; top: 150px; left: 1020px;
+            color: #4A4A4A;
+            font-family: 'Open Sans', sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 22px;
+        }
+        .OknoWords4{
+            position: absolute; z-index: 5;
+            width: 24px; height: 24px; top: 95px; left: 980px; 
+            bottom: 74.22%;
+        }
+        .OknoWords5{
+            position: absolute; z-index: 5;
+            width: 24px; height: 24px; top: 130px; left: 980px; 
+            bottom: 69.78%;
+        }
+        .OknoWords6{
+            position: absolute; z-index: 5;
+            width: 24px; height: 24px; top: 164px; left: 980px; 
+            bottom: 65.33%;
+        }
+        
+        
+       
+
+        .WhiteBlock1{
+        position: absolute; z-index: 3;
+        left: 0%; right: 0%; 
+        width: 1440; height:543px; top: 360px;
+        bottom: -0.33%;
+
+        background: #FFFFFF;
+
+        }
+        .WhiteBlock01{
+            height: 56px;
+            width: 1440px;
+            left: 0px; z-index: 4;
+            top: 360px;
+            border-radius: 0px;
+            position: absolute;
+            bottom: 53.78%;
+
+        }
+        .WhiteBlock01World{
+        position: absolute; z-index: 5;
+        height: 19px;
+        width: 152px;
+        left: 125px; 
+        top: 10px;
+        font-family: 'Open Sans', sans-serif;
+         font-style: normal;
+         font-weight: normal;
+        font-size: 14px;
+         line-height: 19px;
+        text-transform: uppercase;
+        color: #747474;
+        }
+        
+        .WhiteBlock01World2{
+            position: absolute;
+            height: 19px;
+            width: 86px;
+            left: 320px; z-index: 5;
+            top: 10px;
+    
+            font-family: 'Open Sans', sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 19px;
+    
+            color:  #BA1419;;
+            text-transform: uppercase;
+            }
+            .WhiteBlock01World02{
+                height: 4px;
+                width: 134px;
+                left: 297px; z-index: 5;
+                 top: 40px;
+                 border-radius: 0px;
+                 bottom: 53.78%;
+                 position: absolute;
+                background: #BA1419;
+            }
+            .WhiteBlock01World3{
+                position: absolute; z-index: 5;
+                height: 19px;
+                width: 64px;
+                left: 450px; 
+                top: 10px;
+                font-family: 'Open Sans', sans-serif;
+                 font-style: normal;
+                 font-weight: normal;
+                font-size: 14px;
+                 line-height: 19px;
+                text-transform: uppercase;
+                color: #747474;
+                }
+
+                .WhiteBlock01World4{
+                    position: absolute; z-index: 5;
+                    height: 19px;
+                    width: 62px;
+                    left: 560px; 
+                    top: 10px;
+                    font-family: 'Open Sans', sans-serif;
+                     font-style: normal;
+                     font-weight: normal;
+                    font-size: 14px;
+                     line-height: 19px;
+                    text-transform: uppercase;
+                    color: #747474;
+                    }
+                    .WhiteBlock01World5{
+                        position: absolute; z-index: 5;
+                        height: 19px;
+                        width: 74px;
+                        left: 670px; 
+                        top: 10px;
+                        font-family: 'Open Sans', sans-serif;
+                         font-style: normal;
+                         font-weight: normal;
+                        font-size: 14px;
+                         line-height: 19px;
+                        text-transform: uppercase;
+                        color: #747474;
+                        }
+        .Opovech{
+           height: 63px; 
+           width: 776px;
+           left: 300px;
+           top: 440px;
+           border-radius: 0px;
+           position: absolute; z-index: 5;
+           bottom: 44.11%;
+
+        }                
+     
+    .Pokupki{
+        height: 63px;
+        width: 776px; z-index: 5;
+        left: 300px;
+         top: 530px;
+        border-radius: 0px;
+        position: absolute;
+        bottom: 35.22%;
+
+
+    }
+    .Pokupkinakasse{
+        height: 63px;
+        width: 776px; z-index: 5;
+        left: 300px;
+         top: 630px;
+        border-radius: 0px;
+        position: absolute;
+        bottom: 26.33%;
+    }
+    .Pincod{
+        height: 56px;
+       width: 380px;
+        left: 300px;
+        top: 705px;
+        border-radius: 0px;
+        position: absolute; z-index: 5;
+        bottom: 18.33%;
+
+    }
+    .Podpys{
+        height: 56px;
+       width: 380px;
+        left: 700px;
+        top: 705px;
+        border-radius: 0px;
+        position: absolute; z-index: 5;
+        bottom: 18.33%;
+    }
+    .Kanal{
+        height: 75px;
+        width: 776px; z-index: 5;
+        left: 300px;
+         top: 800px;
+        border-radius: 0px;
+        position: absolute;
+        bottom: 8.33%;
+    }
