@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <title>Угадай число</title>
+</head>
+
+<body>
+  <h1>Угадай число</h1>
+
+
+  <div class="form">
+    <label for="guessField">Ввести число </label><input type="text" id="guessField" class="guessField">
+    <input type="submit" value="Проверить" class="guessSubmit">
+<script>
+
+let play = true;
+
+while (play) {
+  let number = Math.floor(Math.random() * 10 + 1);
+  let guess = 0;
+  let correct = false;
+
+
+
+  while (!correct) {
+    guess = window.prompt("Какое число загадано?");
+
+    if (guess == number) {
+        correct = true;
+      alert("Поздравляю! Вы угадали!");
+    } else if (guess === 5 ){
+        alert("GAME OVER ");
+    } else {
+        alert("Неверно!");
+
+    if (guess > number) {
+      alert("Загаданное число меньше введённого!");
+    } else if (guess < number) {
+        alert("Загаданное число больше введённого!");
+    }
+  }
+}
+   
+
+  if (window.prompt("Вы хотите сыграть в новую игру?", "да") != "да") {
+    play = false;
+  }
+}
+
+</script>
+</body>
+</html>
