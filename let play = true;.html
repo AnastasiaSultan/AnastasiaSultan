@@ -19,9 +19,9 @@ let play = true;
 
 while (play) {
   let number = Math.floor(Math.random() * 10 + 1);
-  let guess = 0;
+  let count = 0;
   let correct = false;
-
+let guess;
 
 
   while (!correct) {
@@ -30,15 +30,18 @@ while (play) {
     if (guess == number) {
         correct = true;
       alert("Поздравляю! Вы угадали!");
-    } else if (guess === 5 ){
+    } else if (count === 5 ){
         alert("GAME OVER ");
+        correct=true;
     } else {
         alert("Неверно!");
 
     if (guess > number) {
       alert("Загаданное число меньше введённого!");
+      count++;
     } else if (guess < number) {
         alert("Загаданное число больше введённого!");
+        count++;
     }
   }
 }
