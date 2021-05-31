@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="container">
+</div>
+<button id="button">init</button>
+<script>
+    let count = 10;
+    let button = document.getElementById('button');
+    let container = document.getElementById('container');
+
+    let init = function () {
+        for (let i = 0; i < count; i++) {
+            let div = document.createElement('div');
+            let input = document.createElement('input');
+            div.appendChild(input);
+            container.appendChild(div);
+        }
+        button.removeEventListener('click', init);
+        let sort = function () {
+            let divs = container.querySelectorAll('div');
+            let array = new Array(divs.length);
+            let index = 0;
+            divs.forEach(function (item) {
+                item.parentElement.removeChild(item);
+                let inputValue = item.querySelector('input').value;
+                array[index] = {
+                    item: item,
+                    value: Number.parseInt(inputValue)
+                };
+                index++;
+            });
+            array.sort(function (a, b) {
+                let aValue = a.value;
+                let bValue = b.value;
+                return aValue - bValue;
+            });
+            for (let i = 0; i < array.length; i++) {
+                container.appendChild(array[i].item);
+            }
+        }
+        button.addEventListener('click', sort);
+    };
+
+    button.addEventListener('click', init);
+</script>
+</body>
+</html>
