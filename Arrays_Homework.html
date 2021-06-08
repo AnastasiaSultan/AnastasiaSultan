@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doc</title>
+</head>
+<body>
+    <h1>
+        Домашняя работа
+    </h1>
+
+    <script>
+
+        // Task 1
+
+        console.log("------- Task 1 -------");
+
+        let cites = [
+            { name: "Магнитогорск", district: "Челябинская область", codeOfPhone: "+7 3519", population: 450000 }, 
+            { name: "Белорецк", district: "Республика Башкортостан", codeOfPhone: "+7 34792", population: 64921 }, 
+            { name: "Москва", district: "Московская область", codeOfPhone: "+7 499, +7 495", population:  12655050 },
+            { name: "Самара", district: "Самарская область", codeOfPhone: " +7 846", population: 1144759 },
+            { name: "Уфа", district: "Республика Башкортостан", codeOfPhone: "+7 347", population: 1125933 },
+            { name: "Казань", district: "Республика Татарстан", codeOfPhone: "+7 843", population: 1257341 },
+        ];
+
+        function sortByPopulation(arrOfCites) {
+
+            arrOfCites.sort(function (a, b) {
+                if (a.population > b.population) return 1;
+                if (a.population == b.population) return 0;
+                if (a.population < b.population) return -1; 
+            });
+            console.log(arrOfCites);
+        }
+
+        sortByPopulation(cites);
+
+        // Task 2
+
+        console.log("------- Task 2 -------");
+        let arr2 = [45,78,10,3];
+
+        arr2.sort(function my(a, b) {
+               return b-a;
+            });
+        console.log(arr2);
+        arr2.forEach(function(item,index){
+            if (index<arr2.length-1) {
+                arr2[index]=item+arr2[index+1];
+            }
+            else  arr2.pop();
+        })
+        console.log(arr2);
+        
+        // Task 3
+
+        console.log("------- Task 3 -------");
+        let users = [
+            { name: "Вася", lastName: "Васильев", age: 25 }, 
+            { name: "Петя", lastName: "Петров", age: 30 }, 
+            { name: "Маша", lastName: "Черницина", age: 28 }
+        ];
+        
+        users.forEach(function(item) {
+            delete item.age;
+            delete item.name;
+        });
+
+        console.log(users);
+        
+        // Task 4
+
+        console.log("------- Task 4 -------");
+
+        let arr4Right=[];
+        let array=[];
+        let arr4 = [5, 3, 8, 1, 15, 25, 9, 5, 1, 2];
+        filterRange(arr4, 6, 25)
+
+       function filterRange(arr,a,b ) {
+
+            sarray = arr.map(function(num) {
+                if ((num>a) && (num<b)) {
+                    arr4Right.push(num);
+                    return num;
+                }
+            });
+            console.log(arr4Right);
+        } 
+
+    </script>
+</body>
+</html>
